@@ -1,0 +1,12 @@
+services:
+  clearroute:
+    ports:
+      - 8080:8080
+    build:
+      context: .
+    container_name: clearroute
+    restart: unless-stopped
+
+networks:
+  default:
+    name: clearroute
